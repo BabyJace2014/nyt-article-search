@@ -5,6 +5,8 @@ body {
 
 #title {
     text-align: center;
+    font-family: 'Fugaz One', cursive;
+    font-size: 60px;
    
 }
 
@@ -22,6 +24,16 @@ body {
     color: white;
     font-size: 18px;
     font-family: 'Old Standard TT', serif;
+}
+
+.jumbotron {
+    background-color: #107696;
+    color: white;
+}
+
+#basic-addon1, #basic-addon2, #basic-addon3, #basic-addon4, #submit-button {
+    background-color: #107696;
+    color: white;
 }
 
 #card-returns {
