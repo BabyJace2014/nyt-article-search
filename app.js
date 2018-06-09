@@ -36,14 +36,13 @@ $(document).ready(function () {
 
 				$(newcard).addClass("card border-primary mb-3")
 				$(newcard).attr("id", "return");
-				$(cardhead).addClass("card header");
+				$(cardhead).addClass("card header primary");
 				$(cardhead).attr("id", "articletitle");
 				$(cardbody).addClass("card-body text-primary");
 				$(snippet).addClass("card-text");
 				$(snippet).attr("id", "articlesnippet");
 				$(link).addClass("card-link");
-                $(link).attr("id", "articlelink");
-                
+				$(link).attr("id", "articlelink");
 
 				var headline = response.response.docs[i].headline.main;
 				var snippettext = response.response.docs[i].snippet;
@@ -52,7 +51,6 @@ $(document).ready(function () {
 				$(cardhead).append(headline);
 				$(snippet).append(snippettext);
 				$(link).append(articlelinktext);
-                $(link).attr("href", response.response.docs[i].web_url);
 
 				$(cardbody).append(snippet, link);
 				$(newcard).append(cardhead, cardbody);
